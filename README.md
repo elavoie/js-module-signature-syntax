@@ -11,34 +11,38 @@ A variable named a of type number is written:
     
 The basic types follow the [TypeScript notation](http://www.typescriptlang.org/docs/handbook/basic-types.html).
          
-A function named foo that takes 2 arguments, the first named a of type number and the second named b of type string is written:
+A function named foo that takes 2 arguments, the first named a of type number and the second named b of type string, and returns undefined is written:
  
-    foo (a: number, b: string)
+    foo: (a: number, b: string)
 
 A function named foo that takes no argument and returns c of type number is written:
 
-    foo () => c: number
+    foo: () => c: number
 
 Note that return values do not have names in JavaScript but for reasoning about the behaviour of a module it is easier to name all constituents of its signature.
 
 A function parameter may be optional, in which case we prefix the parameter with '?':
 
-    foo (a: number, ?b: string)
+    foo: (a: number, ?b: string)
 
-An object named foo with a property a of type number and another property b of type function is written:
+An object with a property a of type number and another property b of type function is written:
 
-    foo {
+    {
         a: number,
-        b: b () => c: number
+        b: () => c: number
     }
 
-Since the second name of the function is redundant, we omit it. Also to more closely follow the previous syntax for functions we also omit the ':':
+Objects may also be named by prefixing them with their name, an empty object named 'foo' is therefore written:
 
-    foo {
-        a: number,
-        b () => c: number
+    foo: {}
+
+The same syntax applies when a named object is actually the child of another object:
+
+    {
+        foo: {
+            a: number 
+        }
     }
-
 
     
 Examples
