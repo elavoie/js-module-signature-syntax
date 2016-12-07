@@ -57,4 +57,4 @@ Examples
 Conventions
 ===========
 
-When objects describe pull-streams, the methods are listed from top to bottom in the order in which the values pass through them.
+1. When objects describe [pull-streams](https://pull-stream.github.io), the methods are listed from top to bottom in the order in which the values pass through them.
