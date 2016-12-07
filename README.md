@@ -23,7 +23,7 @@ A function named foo that takes no argument and returns undefined is written:
     
 The return signature '=> _' may be omitted for conciseness when it is undefined:
 
-    foo ()
+    foo: ()
 
 A function parameter may be optional, in which case we prefix the parameter with '?':
 
