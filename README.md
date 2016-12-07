@@ -1,6 +1,6 @@
 Syntax for describing the signature of modules. 
 
-Useful for concisely and precisely declaring what arguments are expected and value returned. Also useful for expressing properties about their behavior for reasoning about correctness.
+Useful for concisely and precisely declaring what arguments are expected and what kind of value is returned. Also useful for concisely expressing properties about their behavior for reasoning about correctness. It was designed to reason about the correctness of pull-stream modules.
 
 Syntax
 ======
