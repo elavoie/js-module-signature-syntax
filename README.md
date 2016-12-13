@@ -47,6 +47,20 @@ The same syntax applies when a named object is actually the child of another obj
             a: number 
         }
     }
+    
+Additional existing but unspecified object properties are noted using an ellipsis:
+
+    {
+        a: number,
+        ...
+    }
+
+These can be optional:
+
+    {
+        a: number,
+        ?...
+    }
 
     
 Examples
